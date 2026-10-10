@@ -1,0 +1,20 @@
+title: Transaction Payload Verification Mismatch
+id: bybit-sim-002
+status: experimental
+description: Detects a mismatch between the verified payload and the payload requested for signing.
+
+logsource:
+  product: application
+  service: transaction_verification
+
+detection:
+  selection:
+    event_type: transaction_verification
+    validation_result: mismatch
+
+  condition: selection
+
+level: critical
+
+tags:
+  - attack.impact

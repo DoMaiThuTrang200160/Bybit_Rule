@@ -1,0 +1,28 @@
+title: Suspicious Wallet Transaction
+id: bybit-sim-003
+status: experimental
+description: Detects an unapproved destination, a high-value transaction, or an implementation change.
+
+logsource:
+  product: application
+  service: wallet_transaction
+
+detection:
+  unapproved_target:
+    event_type: wallet_transaction
+    target_approved: false
+
+  high_value:
+    event_type: wallet_transaction
+    amount|gt: 100000
+
+  implementation_change:
+    event_type: wallet_transaction
+    implementation_change: true
+
+  condition: unapproved_target or high_value or implementation_change
+
+level: high
+
+tags:
+  - attack.impact

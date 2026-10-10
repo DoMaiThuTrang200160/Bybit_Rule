@@ -1,0 +1,15 @@
+{
+  "status": "evaluated_on_simulated_data",
+  "total_events": 10,
+  "labelled_events": 10,
+  "total_alerts": 6,
+  "true_positive": 6,
+  "false_positive": 0,
+  "false_negative": 0,
+  "true_negative": 4,
+  "precision": 1.0,
+  "recall": 1.0,
+  "accuracy": 1.0,
+  "f1_score": 1.0,
+  "note": "Kết quả chỉ phản ánh bộ log mô phỏng và nhãn expected_alert, không đại diện hiệu năng trên hệ thống thực tế."
+}

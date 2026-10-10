@@ -1,0 +1,24 @@
+title: Unapproved Software Deployment or Integrity Mismatch
+id: bybit-sim-001
+status: experimental
+description: Detects an unapproved deployment or an integrity mismatch.
+
+logsource:
+  product: application
+  service: deployment
+
+detection:
+  unapproved:
+    event_type: software_deployment
+    approval_status: unapproved
+
+  integrity_mismatch:
+    event_type: software_deployment
+    integrity_status: mismatch
+
+  condition: unapproved or integrity_mismatch
+
+level: high
+
+tags:
+  - attack.defense_evasion
