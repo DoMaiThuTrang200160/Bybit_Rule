@@ -1,0 +1,4 @@
+﻿alert_id,alert_time,event_time,event_type,account_id,source_ip,rule_id,severity,reason
+ALERT-0001,2026-10-10T11:46:43,2026-10-10T11:20:00+07:00,withdrawal,ACC-1002,192.0.2.77,R1,CRITICAL,Giá trị rút tiền 25000.0 đạt/vượt ngưỡng 10000; IP không thuộc danh sách tin cậy.
+ALERT-0002,2026-10-10T11:46:43,2026-10-10T12:05:00+07:00,withdrawal_api,ACC-1003,198.51.100.20,R2,HIGH,Yêu cầu rút tiền có HTTP Referrer đáng chú ý: https://staging.example.internal/withdraw
+ALERT-0003,2026-10-10T11:46:43,2026-10-10T23:40:00+07:00,api_key_created,ACC-1004,192.0.2.88,R3,MEDIUM,API Key có quyền cao (admin) được tạo ngoài giờ làm việc.

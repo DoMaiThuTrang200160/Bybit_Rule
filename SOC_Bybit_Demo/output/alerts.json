@@ -1,0 +1,35 @@
+[
+  {
+    "alert_id": "ALERT-0001",
+    "alert_time": "2026-10-10T11:46:43",
+    "event_time": "2026-10-10T11:20:00+07:00",
+    "event_type": "withdrawal",
+    "account_id": "ACC-1002",
+    "source_ip": "192.0.2.77",
+    "rule_id": "R1",
+    "severity": "CRITICAL",
+    "reason": "Giá trị rút tiền 25000.0 đạt/vượt ngưỡng 10000; IP không thuộc danh sách tin cậy."
+  },
+  {
+    "alert_id": "ALERT-0002",
+    "alert_time": "2026-10-10T11:46:43",
+    "event_time": "2026-10-10T12:05:00+07:00",
+    "event_type": "withdrawal_api",
+    "account_id": "ACC-1003",
+    "source_ip": "198.51.100.20",
+    "rule_id": "R2",
+    "severity": "HIGH",
+    "reason": "Yêu cầu rút tiền có HTTP Referrer đáng chú ý: https://staging.example.internal/withdraw"
+  },
+  {
+    "alert_id": "ALERT-0003",
+    "alert_time": "2026-10-10T11:46:43",
+    "event_time": "2026-10-10T23:40:00+07:00",
+    "event_type": "api_key_created",
+    "account_id": "ACC-1004",
+    "source_ip": "192.0.2.88",
+    "rule_id": "R3",
+    "severity": "MEDIUM",
+    "reason": "API Key có quyền cao (admin) được tạo ngoài giờ làm việc."
+  }
+]

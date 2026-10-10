@@ -1,0 +1,32 @@
+
+{
+  "trusted_ips": [
+    "203.0.113.10",
+    "198.51.100.20"
+  ],
+  "business_hours": {
+    "start": "09:00",
+    "end": "18:00"
+  },
+  "high_privilege_permissions": [
+    "admin",
+    "withdraw",
+    "trade",
+    "read_write"
+  ],
+  "rules": {
+    "R1": {
+      "enabled": true,
+      "amount_threshold": 10000,
+      "severity": "CRITICAL"
+    },
+    "R2": {
+      "enabled": true,
+      "severity": "HIGH"
+    },
+    "R3": {
+      "enabled": true,
+      "severity": "MEDIUM"
+    }
+  }
+}
